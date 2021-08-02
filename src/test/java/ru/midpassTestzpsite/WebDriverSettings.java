@@ -9,7 +9,10 @@ public class WebDriverSettings {
 
     @Before
     public void setUp() {
-        System.setProperty("webdriver.chrome.driver", "/Users/andrey/Documents/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\sardu\\Documents\\ChromeDriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.logfile", "C:\\Users\\sardu\\Documents\\AutoTestsLogs\\slog.log");
+        System.setProperty("webdriver.chrome.verboseLogging", "true");
+        System.setProperty("webdriver.chrome.whitelistedIps", "");
         driver = new ChromeDriver();
     }
 

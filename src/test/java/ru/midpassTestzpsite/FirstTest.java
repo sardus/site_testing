@@ -11,7 +11,7 @@ public class FirstTest extends WebDriverSettings{
     @Test
     public void firstTest() {
 
-        driver.get("https://testzpsite.midpass.ru/");
+        driver.get("https://zp.midpass.ru/");
         String title = driver.getTitle();
         Assert.assertTrue(title.equals("Оформление заявлений о выдаче ПНП"));
 
